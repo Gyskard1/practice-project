@@ -11,7 +11,7 @@ jobs:
       - name: Install Dependencies
         run: npm ci
       - name: Run lint
-        run: npm eslint --ext .jsx --fix src
+        run: npm runt lint
   test:
     runs-on: ubuntu-latest
     steps:
@@ -22,7 +22,7 @@ jobs:
       - name: Install Dependencies
         run: npm ci
       - name: Run lint
-        run: npm eslint --ext .jsx --fix src
+        run: npm runt lint
   deploy:
     runs-on: ubuntu-latest
     steps:
@@ -33,4 +33,4 @@ jobs:
       - name: Install Dependencies
         run: npm ci
       - name: Run lint
-        run: npm eslint --ext .jsx --fix src
+        run: npm run lint
